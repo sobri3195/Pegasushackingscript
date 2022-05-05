@@ -1,0 +1,76 @@
+
+# Hacking Script
+
+Compilation of scripts/tools (made by Pegasus) that help me with Hacking, Pentest and Bug Bounty.
+
+
+## Acknowledgements
+
+ - [Pegasus Hacker Server](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Pegasus Linux](https://github.com/matiassingers/awesome-readme)
+ - [Artificial Intelligence Pegasus](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+
+
+## Appendix
+
+-. This is hacking script by Pegasus v1
+
+These scripts are ones that I use time to time on Hacking Engagements.
+
+reconPegasus.sh
+- This script will perform the following tasks:
+1.  Run theharvester against the target domain.
+2.  Run fierce to look for subdomains.
+3.  Run whois against domain name and IP addresses discovered.
+4.  Save file with email addresses located.
+
+Use:  ./reconPegasus.sh <targetDomain>
+
+engagementPegasus.sh
+- This script will perform the following tasks:
+1.  Run Responder (if requested)
+2.  Run nmap discovery scan against target IP list
+3.  Run nmap TCP SynScan against live IPs
+4.  Run nmap UDP top 20 ports scan against live IPs
+5.  Import nmap scan results into metasploit (pro version.  for community, remove the "msfpro -- -x" and replace with "msfconsole -x")
+6.  Use EyeWitness to create a HTTP/HTTPS taget list
+7.  Run SSLScan on SSL hosts
+8.  Run EyeWitness to scrape HTTP/HTTPS sites
+9.  Run Nikto against HTTP/HTTPS sites
+10.  Run SNMPCheck against SNMP hosts
+
+Use:  ./engagementPegasus.sh <target IP/subnet/Range> <TargetDomain> <interfaceIP> 
+**InterfaceIP is optional and determines if responder is run or not.**
+
+## Authors
+
+- [@muhsobrimaulan31](https://www.github.com/sobri3195)
+- dr. Muhammad Sobri Maulana, S.Kom, CEH, OSCP, OSCE (Agen Khusus Intelligence Cyber)
+
+
+## Pegasus Badges
+
+Pegasus: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
+
+## Features
+
+- Pegasus Style Hacking
+- Pegasus Server
+- Complete with all hacking needed stuff
+- Enjoy your hacking
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Support
+
+For support, email muhammadsobrimaulana31@gmail.com or Donate.
+
